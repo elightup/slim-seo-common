@@ -1,0 +1,12 @@
+{
+    "name": "elightup/slim-seo-common",
+    "description": "Common code for Slim SEO plugins",
+    "license": "GPL-2.0-or-later",
+    "homepage": "https://wpslimseo.com",
+    "autoload": {
+        "psr-4": {
+            "SlimSEO\\Common\\": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
