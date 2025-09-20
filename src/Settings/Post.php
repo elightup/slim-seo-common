@@ -1,5 +1,5 @@
 <?php
-namespace SlimSEO\Settings;
+namespace eLightUp\SlimSEO\Common\Settings;
 
 class Post {
 	public static function setup(): void {

@@ -5,7 +5,7 @@
     "homepage": "https://wpslimseo.com",
     "autoload": {
         "psr-4": {
-            "SlimSEO\\Common\\": "src/"
+            "eLightUp\\SlimSEO\\Common\\": "src/"
         }
     },
     "minimum-stability": "dev"

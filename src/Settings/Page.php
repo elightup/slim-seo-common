@@ -1,5 +1,5 @@
 <?php
-namespace SlimSEO\Settings;
+namespace eLightUp\SlimSEO\Common\Settings;
 
 class Page {
 	public static function setup(): void {
