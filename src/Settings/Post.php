@@ -60,7 +60,7 @@ class Post {
 		$tabs = self::get_tabs();
 
 		echo '<nav class="ss-tab-list">';
-			
+
 		foreach ( $tabs as $key => $label ) {
 			printf( '<a href="#%s" class="ss-tab">%s</a>', esc_attr( $key ), esc_html( $label ) );
 		}
@@ -71,8 +71,14 @@ class Post {
 	public static function render_panels(): void {
 		$panels = self::get_panels();
 
+		if ( 1 === count( $panels ) ) {
+			echo reset( $panels ); // phpcs:ignore
+
+			return;
+		}
+
 		foreach ( $panels as $key => $panel ) {
-			printf( '<div id="%s" class="ss-tab-pane">%s</div>', esc_attr( $key ), $panel );
+			printf( '<div id="%s" class="ss-tab-pane">%s</div>', esc_attr( $key ), $panel ); // phpcs:ignore
 		}
 	}
 
