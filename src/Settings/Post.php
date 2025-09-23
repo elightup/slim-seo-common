@@ -43,21 +43,16 @@ class Post {
 	}
 
 	public static function render(): void {
-		$tabs = self::get_tabs();
-
-		if ( empty( $tabs ) ) {
-			return;
-		}
-
-		if ( count( $tabs ) > 1 ) {
-			self::render_tabs();
-		}
-
+		self::render_tabs();
 		self::render_panels();
 	}
 
 	private static function render_tabs(): void {
 		$tabs = self::get_tabs();
+
+		if ( count( $tabs ) < 2 ) {
+			return;
+		}
 
 		echo '<nav class="ss-tab-list">';
 
@@ -83,15 +78,11 @@ class Post {
 	}
 
 	private static function get_tabs(): array {
-		$tabs = apply_filters( 'slim_seo_meta_box_tabs', [] );
-
-		return $tabs;
+		return apply_filters( 'slim_seo_meta_box_tabs', [] );
 	}
 
 	private static function get_panels(): array {
-		$panels = apply_filters( 'slim_seo_meta_box_panels', [] );
-
-		return $panels;
+		return apply_filters( 'slim_seo_meta_box_panels', [] );
 	}
 
 	private static function is_valid(): bool {
