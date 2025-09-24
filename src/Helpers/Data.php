@@ -1,5 +1,5 @@
 <?php
-namespace SlimSEO\Helpers;
+namespace eLightUp\SlimSEO\Common\Helpers;
 
 class Data {
 	public static function get_post_types(): array {
