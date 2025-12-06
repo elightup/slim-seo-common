@@ -1,6 +1,8 @@
 <?php
 namespace eLightUp\SlimSEO\Common\Settings;
 
+use eLightUp\SlimSEO\Common\Assets;
+
 class Page {
 	public static function setup(): void {
 		add_action( 'admin_menu', [ __CLASS__, 'add_menu' ] );
@@ -114,9 +116,9 @@ class Page {
 	}
 
 	public static function enqueue(): void {
-		wp_enqueue_style( 'slim-seo-components', 'https://cdn.jsdelivr.net/gh/elightup/slim-seo@master/css/components.css', [], '1.0.0' );
-		wp_enqueue_style( 'slim-seo-settings', 'https://cdn.jsdelivr.net/gh/elightup/slim-seo@master/css/settings.css', [], '1.0.0' );
-		wp_enqueue_script( 'slim-seo-settings', 'https://cdn.jsdelivr.net/gh/elightup/slim-seo@master/js/settings.js', [], '1.0.0', true );
+		Assets::enqueue_css( 'components' );
+		Assets::enqueue_css( 'settings' );
+		Assets::enqueue_js( 'settings' );
 	}
 
 	public static function save(): void {
