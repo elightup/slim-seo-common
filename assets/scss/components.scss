@@ -16,10 +16,8 @@ Variables and only general, multi-purpose components are included here.
 In all plugins, enqueue the following file:
 
 ```php
-wp_enqueue_style( 'slim-seo-components', 'https://cdn.jsdelivr.net/gh/elightup/slim-seo@master/css/components.css', [], '1.0.0' );
+Assets::enqueue_css( 'components' );
 ```
-
-Replace version with the latest version of the plugin.
 */
 
 @use 'components/variables';
@@ -40,4 +38,4 @@ Replace version with the latest version of the plugin.
 - Settings page: redirection, meta tags
 - Edit post: link manager
 */
-@use 'react-tabs';
+@use 'components/react-tabs';
