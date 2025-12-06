@@ -1,0 +1,9 @@
+{
+	"scripts": {
+		"start": "sass -s compressed --no-source-map -w assets/scss:assets/css",
+		"build": "sass -s compressed --no-source-map assets/scss:assets/css"
+	},
+	"dependencies": {
+		"sass": "^1.94.2"
+	}
+}

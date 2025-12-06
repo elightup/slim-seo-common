@@ -1,6 +1,8 @@
 <?php
 namespace eLightUp\SlimSEO\Common\Settings;
 
+use eLightUp\SlimSEO\Common\Assets;
+
 class Post {
 	public static function setup(): void {
 		add_action( 'admin_print_styles-post.php', [ __CLASS__, 'enqueue' ] );
@@ -16,7 +18,7 @@ class Post {
 		$tabs = self::get_tabs();
 
 		if ( count( $tabs ) > 1 ) {
-			wp_enqueue_script( 'slim-seo-components', 'https://cdn.jsdelivr.net/gh/elightup/slim-seo@master/js/components.js', [], '1.0.0', true );
+			Assets::enqueue_js( 'components' );
 		}
 
 		do_action( 'slim_seo_meta_box_enqueue' );
