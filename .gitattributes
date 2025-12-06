@@ -12,3 +12,5 @@ package.json export-ignore
 pnpm-lock.yaml export-ignore
 
 assets/scss export-ignore
+
+slim-seo-common.php export-ignore
