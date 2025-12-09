@@ -43,6 +43,15 @@
 
 .notice.notice {
 	margin: 24px;
+	border-radius: 6px;
+	border-top-color: #e0e0e0;
+	border-bottom-color: #e0e0e0;
+	border-right-color: #e0e0e0;
+	padding-block: 6px;
+}
+
+.notice-dismiss {
+	bottom: 0;
 }
 
 /* Header */
@@ -54,6 +63,7 @@
 	background: #fff;
 	padding: 12px 24px;
 	border-bottom: var(--ss-border);
+	font-size: inherit;
 }
 
 .ss-title svg {
