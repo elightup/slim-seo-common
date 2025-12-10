@@ -28,8 +28,12 @@ class Page {
 
 				<?php if ( ! defined( 'SLIM_SEO_PRO_VER' ) ) : ?>
 					<a href="https://elu.to/ssp" target="_blank" class="ss-title__upgrade">
-						<span class="dashicons dashicons-awards"></span>
-						<strong><?php esc_html_e( 'Pro', 'slim-seo' ); ?></strong>
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" color="currentColor" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+							<path d="M4.5 9.5C4.5 13.6421 7.85786 17 12 17C16.1421 17 19.5 13.6421 19.5 9.5C19.5 5.35786 16.1421 2 12 2C7.85786 2 4.5 5.35786 4.5 9.5Z" />
+							<path d="M9 10.1667C9 10.1667 9.75 10.1667 10.5 11.5C10.5 11.5 12.8824 8.16667 15 7.5" />
+							<path d="M16.8825 15L17.5527 18.2099C17.9833 20.2723 18.1986 21.3035 17.7563 21.7923C17.3141 22.281 16.546 21.8606 15.0099 21.0198L12.7364 19.7753C12.3734 19.5766 12.1919 19.4773 12 19.4773C11.8081 19.4773 11.6266 19.5766 11.2636 19.7753L8.99008 21.0198C7.45397 21.8606 6.68592 22.281 6.24365 21.7923C5.80139 21.3035 6.01669 20.2723 6.44731 18.2099L7.11752 15" />
+						</svg>
+						<strong><?php esc_html_e( 'Upgrade to Pro', 'slim-seo' ); ?></strong>
 					</a>
 				<?php endif ?>
 
@@ -101,7 +105,9 @@ class Page {
 									<li><span class="dashicons dashicons-yes-alt"></span> <?php esc_html_e( 'Real-time link health monitoring', 'slim-seo' ) ?></li>
 									<li><span class="dashicons dashicons-yes-alt"></span> <?php esc_html_e( 'Broken link repair', 'slim-seo' ) ?></li>
 									<li><span class="dashicons dashicons-yes-alt"></span> <?php esc_html_e( 'Link updater', 'slim-seo' ) ?></li>
-									<li><span class="dashicons dashicons-yes-alt"></span> <?php esc_html_e( 'And more in the future...', 'slim-seo' ) ?></li>
+									<li><span class="dashicons dashicons-yes-alt"></span> <?php esc_html_e( 'Google Search Console integration', 'slim-seo' ) ?></li>
+									<li><span class="dashicons dashicons-yes-alt"></span> <?php esc_html_e( 'Writing assistant', 'slim-seo' ) ?></li>
+									<li><span class="dashicons dashicons-yes-alt"></span> <?php esc_html_e( 'And more...', 'slim-seo' ) ?></li>
 								</ul>
 								<a class="button button-primary" href="https://elu.to/ssp" target="_blank">
 									<?php // Translators: %s - plugin name ?>
