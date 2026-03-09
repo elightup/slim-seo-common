@@ -140,3 +140,13 @@ p.submit {
 		display: block;
 	}
 }
+
+// Migrate
+.migration-handler {
+	display: flex;
+	gap: 8px;
+
+	select {
+		width: auto;
+	}
+}
