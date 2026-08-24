@@ -5,5 +5,5 @@
 	--ss-color-red: #e53e3e;
 	--ss-border: 1px solid var(--ss-color-light);
 	--ss-border-lighter: 1px solid var(--ss-color-lighter);
-	--ss-color-primary: #3858e9;
+	--ss-color-primary: var(--wp-admin-theme-color, #3858e9);
 }
