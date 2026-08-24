@@ -19,22 +19,19 @@ Thumbs.db export-ignore
 ## PHP
 composer.json export-ignore
 composer.lock export-ignore
-phpcs.xml export-ignore
-phpcs.xml.dist export-ignore
+phpcs.* export-ignore
 phpunit.xml export-ignore
-phpstan.neon export-ignore
-phpstan.neon.dist export-ignore
+phpstan.* export-ignore
 
 ## JS
 package.json export-ignore
 package-lock.json export-ignore
 pnpm-lock.yaml export-ignore
+pnpm-workspace.yaml export-ignore
 webpack.config.js export-ignore
 
 ## Markdown
-TODO.md export-ignore
-README.md export-ignore
-CHANGELOG.md export-ignore
+*.md export-ignore
 
 ## Special folders
 tests export-ignore

@@ -4,6 +4,6 @@
 		"build": "sass -s compressed --no-source-map assets/scss:assets/css"
 	},
 	"dependencies": {
-		"sass": "^1.97.3"
+		"sass": "^1.103.1"
 	}
 }
