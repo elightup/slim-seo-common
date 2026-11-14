@@ -1,0 +1,17 @@
+name: opencode-review
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+
+jobs:
+  review:
+    # A called workflow can't have more permissions than its caller.
+    permissions:
+      contents: read
+      pull-requests: write
+      issues: write
+    uses: wpmetabox/meta-box/.github/workflows/opencode-review.yml@master
+    # secrets: inherit does not reach wpmetabox workflows from elightup, so pass the key explicitly.
+    secrets:
+      OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
